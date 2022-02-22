@@ -19,7 +19,7 @@ botao.addEventListener("click", function (criarLi) {
 
 })
 // busquei a ol para criar um evento de click ao final
-    let buscarOl = document.querySelector('ol');
+let buscarOl = document.querySelector('ol');
 //criei uma função para trocar o fundo
 function trocarFundo(event) {
     //criei uma variavel para chamar a li
@@ -28,7 +28,7 @@ function trocarFundo(event) {
     for (let index = 0; index < lista.length; index += 1) {
            lista[index].style.backgroundColor = null;
         }
-    //implementando o evento
+    //event.target : implementando o evento (consultei o stackoverflow)
         event.target.style.backgroundColor = 'rgb(128, 128, 128)';
     }
     buscarOl.addEventListener('click', trocarFundo);
