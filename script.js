@@ -32,3 +32,11 @@ function trocarFundo(event) {
         event.target.style.backgroundColor = 'rgb(128, 128, 128)';
     }
     buscarOl.addEventListener('click', trocarFundo);
+
+    //chamando o botão de apagar
+    let btApaga = document.querySelector('#apaga-tudo');
+    
+    function apagaLista(){
+        buscarOl.innerText = '';
+    }
+    btApaga.addEventListener('click', apagaLista );
